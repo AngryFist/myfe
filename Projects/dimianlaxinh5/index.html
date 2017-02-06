@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>    
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta name="format-detection" content="telephone=no">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    
+    <link rel="stylesheet/less" href="css/less/style.less"> 
+    <script>
+      less = {
+        env: "development",
+        async: false,
+        fileAsync: false,
+        poll: 1000,
+        functions: {},
+        dumpLineNumbers: "comments",
+        relativeUrls: false,
+        rootpath: ":/a.com/"
+      };
+    </script>
+    <script src="js/less.min.js"></script>
+    
+</head>
+<body>
+    <section class="index-section none">
+        <div class="logo"><img src="images/logo-1.png"></div>
+        <div class="check-form">
+            <div class="form-group">
+                <p class="tip red"><span class="i-con i-con-warning"></span>手机号或员工编号不存在！</p>
+                <input type="number" class="input ipt-10 bottom-mg-18" placeholder="输入手机号或员工编号">
+                <input type="text" class="input ipt-10  bottom-mg-36" placeholder="输入右侧验证码">
+                <img src="images/v.png" class="valid-img" alt="">
+                <a href="#" class="button btn-10">查询</a>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="qr-section ">
+        <div class="logo"><img src="images/logo-2.png"></div>
+        <div class="qr-show"><img src="images/qr.png"></div>
+        <div class="qr-info">
+            <p><span class="i-con i-con-mobile"></span>138****3456</p>
+            <p><span class="i-con i-con-person"></span>00215</p>
+        </div>
+    </section>
+</body>
+</html>

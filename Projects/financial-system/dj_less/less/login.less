@@ -1,0 +1,108 @@
+@import '../variables';
+@import '../lib/basic';
+html,body{
+	height: 100%;
+}
+body{
+	position: relative;
+	overflow: hidden;
+	background: url('@{bg}/loginbg.png')  no-repeat center center;
+	background-attachment: fixed;
+	.-bg ._size(100% 100%);
+}
+
+.loginbox{
+	position: absolute;
+	width: 564px;
+	height: 504px;
+	top: 50%;
+	left: 50%;
+	margin-top:(-504/2px);
+	margin-left:(-564/2px);
+	background: url('@{bg}/login.png')  no-repeat center center;
+	.loginwarp{
+		width: 386px;
+		margin: 85px auto;
+		font-size: @bigFontSize;
+		ul{
+			li{
+				width: 386px;
+				height: 40px;
+				line-height: 40px;
+				margin-bottom: 18px;
+				._clearfix();
+				&.last{
+					padding-top: 45px;
+				}
+				&.frist{
+					padding-bottom: 35px;
+
+				}
+			}
+		}
+
+		span{
+			&.title{
+				float: left;
+				width: 84px;
+				display: block;
+			}
+		}
+		input[type='text'],input[type='password']{
+			background: #ffffff;
+			height: 38px;
+			line-height: 22px;
+			font-size: @baseFontSize;
+			float: left;
+			width: 269px;
+			border:1px solid @loginInputBorder;
+			border-radius: @inputRadius;
+			padding: 0px 10px;
+			&.verifycode{
+				width: 148px;
+				margin-right: 7px;
+			}
+		}
+		input[type='submit'],input[type='button'],a.btn{
+			height: 40px;
+			text-align: center;
+			display: inline-block;
+			color: #ffffff;
+			font-size: @baseFontSize;
+			border:none;
+
+			&.verifycode_btn{
+				background: @verifyBgColor;
+				width: 113px;
+				border-radius: @inputRadius;
+				cursor: pointer;
+				&:hover{
+					background: darken(@verifyBgColor, 10%)
+				}
+			}
+			&.login_btn{
+				background: @btnLoginBgColor;
+				width: 375px;
+				border-radius: @inputRadius;
+				cursor: pointer;
+				&:hover{
+					background: darken(@btnLoginBgColor, 10%)
+				}
+
+			}
+
+		}
+		.logo{
+			display: block;
+			float: left;
+			margin-right: 14px;
+		}
+		h1{
+			font-size: 26px;
+			color: @btnLoginBgColor;
+
+		}
+
+
+	}
+}

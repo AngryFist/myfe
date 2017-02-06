@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cookie</title>
+</head>
+<body>
+
+
+    <script type="text/javascript" src="../common/lib/cookie.js"></script>
+    <script type="text/javascript">
+        DJs_cookie.set('test' , 'test000', '', '/DJslib');
+        document.write(DJs_cookie.read('test'));
+        //DJs_cookie.del('test');
+        document.write('<br />');
+        document.write(DJs_cookie.read('test'));
+    </script>
+</body>
+</html>

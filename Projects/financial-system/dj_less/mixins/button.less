@@ -1,0 +1,80 @@
+@import "../variables";
+._btn(@width,@height,@bgColor,@radius,@lastFix){
+	.btn{
+		cursor: pointer;
+		border-radius: @radius;
+		text-align: center;
+		font-size: @baseFontSize;
+		&.btn-@{lastFix}{
+			height: @height;
+			line-height: @height;
+			border:none;
+			color: #ffffff;
+			width: @width;
+			background: @bgColor;
+			display: inline-block;
+			&:hover{
+				background: darken(@bgColor, 10%)
+			}
+
+		}
+	}
+} 
+
+
+._btn(@width,@height,@bgColor,@radius,@lastFix) when(@width=auto){
+	.btn{
+		cursor: pointer;
+		border-radius: @radius;
+		text-align: center;
+		font-size: @baseFontSize;
+		&.btn-@{lastFix}{
+			height: @height;
+			line-height: @height;
+			border:none;
+			color: #ffffff;
+			padding: 0px 10px;
+			background: @bgColor;
+			display: inline-block;
+			&:hover{
+				background: darken(@bgColor, 10%)
+			}
+
+		}
+	}
+} 
+
+
+._btnBorder(@height,@bgColor,@radius,@lastFix) when(@lastFix=border){
+	.btn{
+		cursor: pointer;
+		border-radius: @radius;
+		text-align: center;
+		font-size: @baseFontSize;
+		&.btn-@{lastFix}{
+			height: @height;
+
+			line-height: @height - 2;
+			padding: 0px 10px;
+			background: @bgColor;
+			border:1px solid @borderColor;
+			width: auto;
+			color: @baseTextColor;
+			display: inline-block;
+			&:hover,&.active{
+				background: darken(@markColor, 10%);
+				color: #ffffff;
+				border-color: @markColor;
+			}
+
+		}
+	}
+} 
+
+
+._btn_primary(){
+	._btn(88px,30px,@markColor,5px,primary);
+	._btn(88px,30px,#fd8d1f,5px,aux);
+	._btnBorder(30px,#ffffff,5px,border);
+}
+

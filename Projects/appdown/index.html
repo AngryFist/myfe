@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心</title>
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <script src="//activity.daojia.com.cn/dj_static/zepto/1.2.0/zepto.min.js"></script>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font: inherit;
+        vertical-align: baseline;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+    
+    html {
+        font-size: 62.5%;
+    }
+    
+    body {
+        margin: 0 auto;
+        font-family: "Microsoft YaHei", Arial, "Helvetica";
+        background: #f6f6f6;
+        color: #333;
+        font-size: 1.2rem;
+    }
+    
+    .down-detail {
+        overflow: hidden;
+    }
+    
+    img {
+
+    }
+    
+    body {
+        background: url(images/download-bg.png) no-repeat;
+        background-size: cover;
+    }
+    
+    .dj-logo,
+    .dj-phone,
+    .android-btn {
+        
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .j-orient-0 .android-btn,.j-orient-0 .dj-logo {
+        height: 20%;
+    }
+    .j-orient-0 .android-btn img,.j-orient-0 .dj-logo img {
+        vertical-align: middle;
+    }
+    
+    .j-orient-0 .dj-phone {
+        height: 60%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    </style>
+</head>
+
+<body class="j-orient-0">
+  <article class="down-detail">
+      <section class="dj-logo">
+          <img src="images/dj-logo.png">
+      </section>
+      <section class="download-btn android-btn">
+          <img src="images/androiddown_btn.png">
+      </section>
+      <!--<section class="download-btn ios-btn">
+         <img src="images/iosdown-btn.png">
+      </section>-->
+      <section class="dj-phone">
+          <img src="images/dj-phone.png">
+      </section>
+      
+  </article>
+  <script>
+
+  var win = function(){
+    return {
+      width : $(window).width(),
+      height : $(window).height()
+    }  
+  }
+
+  var img = {
+    logo : [171, 127],
+    down : [354, 126],
+    phon : [366, 647]
+  }
+
+  var initEle = function(){
+
+    
+
+    var j0 = $('.j-orient-0'), j1 = $('.j-orient-1'), e = '.down-detail', e0 = '.dj-logo', e1 = '.download-btn', e2 ='.dj-phone' ;
+
+    j0.find(e).height(win().height);
+    j0.find(e0).css({'line-height':$(j0).find(e0).height() + 'px', 'margin-top' : 0})
+    j0.find(e1).css({'line-height':$(j0).find(e1).height() + 'px','margin-top' : 0})
+    j0.find(e0 + ' img').width('25%');
+    j0.find(e1 + ' img').width('50%');
+    var phoneHeight =  j0.find(e2).height();
+    j0.find(e2 + ' img').css({'height':phoneHeight + 'px','width':phoneHeight * img.phon[0] / img.phon[1] + 'px'});
+
+
+    j1.find(e).height('auto');
+    j1.find(e0).css({'line-height':'1', 'margin-top' : '20px'});
+    j1.find(e2 + ' img').height('auto').width('70%');
+    j1.find(e1).css({'line-height':'1', 'margin-top' : '40px'});
+  }
+
+  $(function(){
+    if(win().height > win().width){
+      $('body').attr('class', 'j-orient-0')
+    }else {
+      $('body').attr('class', 'j-orient-1')
+    }
+    initEle();
+  })
+
+  function orientationChange() {
+    switch(window.orientation) {
+    　　case 0: 
+          $('body').attr('class', 'j-orient-0')
+          break;
+    　　case -90: 
+          $('body').attr('class', 'j-orient-1')
+          break;
+    　　case 90:
+          $('body').attr('class', 'j-orient-1')
+          break;
+    　　case 180:
+          $('body').attr('class', 'j-orient-0')
+        　break;
+        default : 
+          break;
+    }
+    var t = setTimeout(function(){
+      initEle();
+    },300)
+    
+  };
+
+  window.onorientationchange = orientationChange;
+
+  </script>
+</body>
+
+</html>

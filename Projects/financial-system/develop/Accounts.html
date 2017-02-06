@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>财务系统-对账中心</title>
+	<link rel="stylesheet" type="text/css" href="static/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="static/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="static/css/jquery-ui.css">
+</head>
+<body>
+    <div class="header">
+        <div class="warp_doc js-render-header "></div>
+    </div>
+
+    <div class="section">
+        <div class="warp_doc">
+            <div class="asider js-rander-asider"></div>
+            <div class="container">
+               <div class="main accounts">
+                    <div class="js-tabbtn-group tab_btn_group mainnav">
+                        <a href="Accounts.html" class="active"><i class="ico collect"></i> <div class="uptag"></div>财务汇总</a>
+                        <a href="Accounts2.html"><i class="ico detail"></i> <div class="uptag"></div>财务明细</a>
+                        <a href="Accounts3.html" ><i class="ico download"></i> <div class="uptag"></div>财务下载</a>
+                       
+                    </div>
+                    <div class="js-tab-view tab_view_content maincontent">
+                        <div class="view js-view">
+                            <div class="sbox">
+                                <div class="searchbox">
+                                    <div class="linebox">
+
+                                        <div class="line_inputbox wlv1">
+                                            <select name="" id="">
+                                                <option value="2">--全国--</option>
+                                                <option value="2">北京</option>
+                                                <option value="2">上海</option>
+                                            </select>
+                                        </div>
+
+
+                                        <div class="line_inputbox wlv1">
+                                            <select name="" id="">
+                                                <option value="1">--订单类型--</option>
+                                                <option value="1">类型1</option>
+                                                <option value="1">类型2</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="line_inputbox wlv1">
+                                            <select name="" id="">
+                                                <option value="1">--支付方式--</option>
+                                                <option value="1">方式1</option>
+                                                <option value="1">方式2</option>
+                                            </select>
+                                        </div>
+                                        
+                                    </div>
+
+
+                                    <div class="linebox">
+                                        <div class="fleft">
+                                            <div class="btngrunp js-tabcollect">
+                                                <div class="lbtn active" data-type='date'>日汇总</div>
+                                                <div class="lbtn"  data-type='month'>月汇总</div>
+                                            </div>
+
+                                            <div class="btngrunp">
+                                                <i class="ico lbtn_angu active"></i>
+                                                <i class="ico rbtn_angu"></i>
+                                            </div>
+                                            <div class="datemsg mark">2015年<span class="js-showmonth">5月</span></div>
+                                        </div>
+                                        <div class="fright">
+                                            <input type="button" value="" class="ico download">
+                                            <input type="button" value="" class="ico print">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="tbox">
+                                <table  border="0" cellspacing="0" cellpadding="0" class='collect'>
+                                    <thead>
+                                        <tr>
+                                            <td>日期</td>
+                                            <td>流入(元)</td>
+                                            <td>流出(元)</td>
+                                            <td>余额(元)</td>
+                                            <td>操作</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr valign="top">
+                                            <td><span class="dnumber">09</span></td>
+                                            <td>
+                                                <div class="dheader">
+                                                    <p class="streamin">+444，444.00</p>
+                                                    <p>160,490 笔</p>
+                                                </div>
+
+                                                <div class="dcontent">
+                                                    <table border="0" cellspacing="0" cellpadding="0" class="intable">
+                                                    <tr>
+                                                        <td>支付宝</td>
+                                                        <td class="textr">
+                                                            <p>1,795,617.62 </p>
+                                                            <p>160,490 笔</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>微信</td>
+                                                        <td class="textr">
+                                                            <p>1,795,617.62 </p>
+                                                            <p>160,490 笔</p>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>applepay</td>
+                                                        <td class="textr">
+                                                            <p>1,795,617.62 </p>
+                                                            <p>160,490 笔</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>到家余额</td>
+                                                        <td class="textr">
+                                                            <p>1,795,617.62 </p>
+                                                            <p>160,490 笔</p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                    
+                                                </div>
+
+                                            </td>
+                                            <td>
+                                                <div class="dheader">
+                                                    <p class="streamout">+444，444.00</p>
+                                                    <p>160,490 笔</p>
+                                                </div>
+                                                <div class="dcontent">
+                                                    <table border="0" cellspacing="0" cellpadding="0" class="intable">
+                                                    <tr>
+                                                        <td>免收</td>
+                                                        <td class="textr">
+                                                            <p>1,795,617.62 </p>
+                                                            <p>160,490 笔</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>取消</td>
+                                                        <td class="textr">
+                                                            <p>1,795,617.62 </p>
+                                                            <p>160,490 笔</p>
+                                                        </td>
+                                                    </tr>
+
+                                                     <tr>
+                                                        <td>改单</td>
+                                                        <td class="textr">
+                                                            <p>1,795,617.62 </p>
+                                                            <p>160,490 笔</p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                    
+                                                </div>
+
+                                               
+                                            </td>
+                                            <td>
+                                                 <div class="dheader">
+                                                    <p>+444，444.00</p>
+                                                    <p>160,490 笔</p>
+                                                </div>
+                                                 <div class="dcontent">
+                                                    <table border="0" cellspacing="0" cellpadding="0" class="intable">
+                                                    <tr>
+                                                        <td>余额</td>
+                                                        <td class="textr">
+                                                            <p>1,795,617.62 </p>
+                                                            <p>160,490 笔</p>
+                                                        </td>
+                                                    </tr>
+                                                   
+                                                </table>
+                                                    
+                                                </div>
+                                            </td>
+
+                                            <td width="170" valign="top">
+                                                <a href="#" class="download">下载<span class="js-monthtext">日</span>账单</a>
+                                            </td>
+                                         
+                                        </tr>
+
+                                        <tr valign="middle">
+                                            <td><span class="dnumber">09</span></td>
+                                            <td>
+                                                <div class="dheader">
+                                                    <p class="streamin">+444，444.00</p>
+                                                    <p>160,490 笔</p>
+                                                </div>
+
+                                            </td>
+                                            <td>
+                                                <div class="dheader">
+                                                    <p class="streamout">+444，444.00</p>
+                                                    <p>160,490 笔</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="dheader">
+                                                    <p>+444，444.00</p>
+                                                    <p>160,490 笔</p>
+                                                </div>
+
+                                            </td>
+                                            <td width="170" valign="top">
+                                                <a href="#" class="download">下载<span class="js-monthtext">日</span>账单</a>
+                                            </td>
+                                         
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<script type="text/javascript">
+        var publicPath = '/static';
+        //var baseUrl = publicPath + '/modules';
+        //var baseUrl = publicPath + '/js/release/1.0.0';
+    </script>
+    <script type="text/javascript" src="static/js/vendor/jquery.js"></script>
+    <script type="text/javascript" src="static/js/require.js"  data-main="accountsMain"></script>
+
+</body>
+</html>

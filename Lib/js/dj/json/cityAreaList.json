@@ -1,0 +1,771 @@
+{
+  "status": 0,
+  "result": [
+  {
+      "CityID": "1",
+      "Name": "北京",
+      "Pinyin": "BeiJing",
+      "AreaList": [
+        {
+          "AreaID": "1",
+          "CityID": "1",
+          "Name": "望京"
+        },
+        {
+          "AreaID": "2",
+          "CityID": "1",
+          "Name": "亚运村"
+        },
+        {
+          "AreaID": "3",
+          "CityID": "1",
+          "Name": "安贞"
+        },
+        {
+          "AreaID": "4",
+          "CityID": "1",
+          "Name": "和平里"
+        },
+        {
+          "AreaID": "7",
+          "CityID": "1",
+          "Name": "酒仙桥"
+        },
+        {
+          "AreaID": "9",
+          "CityID": "1",
+          "Name": "三元桥"
+        },
+        {
+          "AreaID": "11",
+          "CityID": "1",
+          "Name": "团结湖"
+        },
+        {
+          "AreaID": "13",
+          "CityID": "1",
+          "Name": "劲松"
+        },
+        {
+          "AreaID": "15",
+          "CityID": "1",
+          "Name": "方庄"
+        },
+        {
+          "AreaID": "17",
+          "CityID": "1",
+          "Name": "青年路"
+        },
+       {
+          "AreaID": "19",
+          "CityID": "1",
+          "Name": "中关村"
+        },
+       {
+          "AreaID": "21",
+          "CityID": "1",
+          "Name": "万柳"
+        },
+       {
+          "AreaID": "23",
+          "CityID": "1",
+          "Name": "魏公村"
+        },
+       {
+          "AreaID": "29",
+          "CityID": "1",
+          "Name": "航天桥"
+        },
+       {
+          "AreaID": "51",
+          "CityID": "1",
+          "Name": "西直门"
+        },
+       {
+          "AreaID": "53",
+          "CityID": "1",
+          "Name": "工体"
+        },
+       {
+          "AreaID": "55",
+          "CityID": "1",
+          "Name": "广安门"
+        },
+       {
+          "AreaID": "57",
+          "CityID": "1",
+          "Name": "四惠"
+        },
+       {
+          "AreaID": "59",
+          "CityID": "1",
+          "Name": "草桥"
+        },
+       {
+          "AreaID": "61",
+          "CityID": "1",
+          "Name": "东直门"
+        },
+       {
+          "AreaID": "63",
+          "CityID": "1",
+          "Name": "月坛"
+        },
+       {
+          "AreaID": "65",
+          "CityID": "1",
+          "Name": "鲁谷田村"
+        },
+       {
+          "AreaID": "67",
+          "CityID": "1",
+          "Name": "北太平庄"
+        },
+       {
+          "AreaID": "69",
+          "CityID": "1",
+          "Name": "崇文门"
+        },
+       {
+          "AreaID": "87",
+          "CityID": "1",
+          "Name": "白纸坊"
+        },
+       {
+          "AreaID": "91",
+          "CityID": "1",
+          "Name": "五道口"
+        },
+        {
+          "AreaID": "103",
+          "CityID": "1",
+          "Name": "测试区域"
+        },
+        {
+          "AreaID": "105",
+          "CityID": "1",
+          "Name": "泛海"
+        },
+        {
+          "AreaID": "113",
+          "CityID": "1",
+          "Name": "霄云路"
+        },
+        {
+          "AreaID": "119",
+          "CityID": "1",
+          "Name": "青塔"
+        },
+        {
+          "AreaID": "121",
+          "CityID": "1",
+          "Name": "小营"
+        },
+        {
+          "AreaID": "123",
+          "CityID": "1",
+          "Name": "建外"
+        },
+        {
+          "AreaID": "127",
+          "CityID": "1",
+          "Name": "北苑"
+        },
+        {
+          "AreaID": "129",
+          "CityID": "1",
+          "Name": "回龙观"
+        },
+        {
+          "AreaID": "131",
+          "CityID": "1",
+          "Name": "六里桥"
+        },
+        {
+          "AreaID": "135",
+          "CityID": "1",
+          "Name": "金融街"
+        },
+        {
+          "AreaID": "137",
+          "CityID": "1",
+          "Name": "王府井"
+        },
+        {
+          "AreaID": "145",
+          "CityID": "1",
+          "Name": "天通苑"
+        },
+        {
+          "AreaID": "163",
+          "CityID": "1",
+          "Name": "石景山"
+        },
+        {
+          "AreaID": "165",
+          "CityID": "1",
+          "Name": "通州"
+        },
+        {
+          "AreaID": "167",
+          "CityID": "1",
+          "Name": "黄村"
+        },
+        {
+          "AreaID": "169",
+          "CityID": "1",
+          "Name": "亦庄"
+        },
+        {
+          "AreaID": "171",
+          "CityID": "1",
+          "Name": "管庄"
+        },
+        {
+          "AreaID": "197",
+          "CityID": "1",
+          "Name": "百子湾"
+        }
+      ]
+    },
+    {
+      "CityID": "2",
+      "Name": "上海",
+      "Pinyin": "ShangHai",
+      "AreaList": [
+       {
+          "AreaID": "75",
+          "CityID": "2",
+          "Name": "徐汇"
+        },
+       {
+          "AreaID": "77",
+          "CityID": "2",
+          "Name": "静安寺"
+        },
+       {
+          "AreaID": "79",
+          "CityID": "2",
+          "Name": "黄浦"
+        },
+       {
+          "AreaID": "81",
+          "CityID": "2",
+          "Name": "闸北"
+        },
+       {
+          "AreaID": "83",
+          "CityID": "2",
+          "Name": "古北"
+        },
+        {
+          "AreaID": "85",
+          "CityID": "2",
+          "Name": "大华"
+        },
+       {
+          "AreaID": "89",
+          "CityID": "2",
+          "Name": "陆家嘴"
+        },
+       {
+          "AreaID": "93",
+          "CityID": "2",
+          "Name": "和平公园"
+        },
+       {
+          "AreaID": "95",
+          "CityID": "2",
+          "Name": "漕河泾"
+        },
+       {
+          "AreaID": "97",
+          "CityID": "2",
+          "Name": "五角场"
+        },
+       {
+          "AreaID": "99",
+          "CityID": "2",
+          "Name": "凉城"
+        },
+        {
+          "AreaID": "101",
+          "CityID": "2",
+          "Name": "世纪公园"
+        },
+        {
+          "AreaID": "107",
+          "CityID": "2",
+          "Name": "金桥"
+        },
+        {
+          "AreaID": "109",
+          "CityID": "2",
+          "Name": "莘庄"
+        },
+        {
+          "AreaID": "150",
+          "CityID": "2",
+          "Name": "真如"
+        },
+        {
+          "AreaID": "152",
+          "CityID": "2",
+          "Name": "世博园"
+        },
+        {
+          "AreaID": "162",
+          "CityID": "2",
+          "Name": "电动车管理"
+        },
+        {
+          "AreaID": "185",
+          "CityID": "2",
+          "Name": "彭浦新村"
+        },
+        {
+          "AreaID": "187",
+          "CityID": "2",
+          "Name": "上海南站"
+        },
+        {
+          "AreaID": "189",
+          "CityID": "2",
+          "Name": "张江高科"
+        },
+        {
+          "AreaID": "195",
+          "CityID": "2",
+          "Name": "平凉公园"
+        },
+        {
+          "AreaID": "234",
+          "CityID": "2",
+          "Name": "七宝"
+        },
+        {
+          "AreaID": "237",
+          "CityID": "2",
+          "Name": "动物园"
+        },
+        {
+          "AreaID": "239",
+          "CityID": "2",
+          "Name": "高境"
+        },
+        {
+          "AreaID": "242",
+          "CityID": "2",
+          "Name": "新江湾城"
+        },
+        {
+          "AreaID": "246",
+          "CityID": "2",
+          "Name": "三林"
+        },
+        {
+          "AreaID": "250",
+          "CityID": "2",
+          "Name": "碧云"
+        }
+      ]
+    },
+    {
+      "CityID": "3",
+      "Name": "杭州",
+      "Pinyin": "HangZhou",
+      "AreaList": [
+        {
+          "AreaID": "111",
+          "CityID": "3",
+          "Name": "庆春"
+        },
+        {
+          "AreaID": "112",
+          "CityID": "3",
+          "Name": "西湖"
+        },
+        {
+          "AreaID": "114",
+          "CityID": "3",
+          "Name": "德胜"
+        },
+        {
+          "AreaID": "116",
+          "CityID": "3",
+          "Name": "景芳"
+        },
+        {
+          "AreaID": "124",
+          "CityID": "3",
+          "Name": "测试"
+        },
+        {
+          "AreaID": "126",
+          "CityID": "3",
+          "Name": "望江"
+        },
+        {
+          "AreaID": "128",
+          "CityID": "3",
+          "Name": "登云"
+        }
+      ]
+    },
+    {
+      "CityID": "4",
+      "Name": "苏州",
+      "Pinyin": "SuZhou",
+      "AreaList": [
+        {
+          "AreaID": "132",
+          "CityID": "4",
+          "Name": "观前街"
+        },
+        {
+          "AreaID": "134",
+          "CityID": "4",
+          "Name": "石路"
+        },
+        {
+          "AreaID": "138",
+          "CityID": "4",
+          "Name": "中央公园"
+        },
+        {
+          "AreaID": "154",
+          "CityID": "4",
+          "Name": "湖东"
+        },
+        {
+          "AreaID": "174",
+          "CityID": "4",
+          "Name": "狮山"
+        },
+        {
+          "AreaID": "191",
+          "CityID": "4",
+          "Name": "吴中"
+        }
+      ]
+    },
+    {
+      "CityID": "5",
+      "Name": "南京",
+      "Pinyin": "NanJing",
+      "AreaList": [
+        {
+          "AreaID": "142",
+          "CityID": "5",
+          "Name": "玄武店"
+        },
+        {
+          "AreaID": "172",
+          "CityID": "5",
+          "Name": "鼓楼"
+        },
+        {
+          "AreaID": "176",
+          "CityID": "5",
+          "Name": "汉中"
+        },
+        {
+          "AreaID": "193",
+          "CityID": "5",
+          "Name": "奥体"
+        }
+      ]
+    },
+    {
+      "CityID": "6",
+      "Name": "常州",
+      "Pinyin": "ChangZhou",
+      "AreaList": [
+        {
+          "AreaID": "144",
+          "CityID": "6",
+          "Name": "常州城区"
+        }
+      ]
+    },
+    {
+      "CityID": "7",
+      "Name": "天津",
+      "Pinyin": "TianJin",
+      "AreaList": [
+        {
+          "AreaID": "147",
+          "CityID": "7",
+          "Name": "人民公园"
+        },
+        {
+          "AreaID": "149",
+          "CityID": "7",
+          "Name": "滨江道"
+        },
+        {
+          "AreaID": "179",
+          "CityID": "7",
+          "Name": "奥体中心"
+        },
+        {
+          "AreaID": "199",
+          "CityID": "7",
+          "Name": "梅江"
+        }
+      ]
+    },
+    {
+      "CityID": "8",
+      "Name": "无锡",
+      "Pinyin": "WuXi",
+      "AreaList": [
+        {
+          "AreaID": "148",
+          "CityID": "8",
+          "Name": "无锡城区"
+        },
+        {
+          "AreaID": "318",
+          "CityID": "8",
+          "Name": "湖滨区"
+        }
+      ]
+    },
+    {
+      "CityID": "9",
+      "Name": "深圳",
+      "Pinyin": "ShenZhen",
+      "AreaList": [
+        {
+          "AreaID": "177",
+          "CityID": "9",
+          "Name": "香蜜湖"
+        },
+        {
+          "AreaID": "181",
+          "CityID": "9",
+          "Name": "前海"
+        },
+        {
+          "AreaID": "183",
+          "CityID": "9",
+          "Name": "车公庙"
+        },
+        {
+          "AreaID": "201",
+          "CityID": "9",
+          "Name": "购物公园"
+        },
+        {
+          "AreaID": "203",
+          "CityID": "9",
+          "Name": "南山中心"
+        },
+        {
+          "AreaID": "205",
+          "CityID": "9",
+          "Name": "中山公园"
+        },
+        {
+          "AreaID": "207",
+          "CityID": "9",
+          "Name": "商务"
+        },
+        {
+          "AreaID": "211",
+          "CityID": "9",
+          "Name": "国贸"
+        },
+        {
+          "AreaID": "215",
+          "CityID": "9",
+          "Name": "科技园南站"
+        },
+        {
+          "AreaID": "217",
+          "CityID": "9",
+          "Name": "科技园北站"
+        },
+        {
+          "AreaID": "219",
+          "CityID": "9",
+          "Name": "四海公园"
+        },
+        {
+          "AreaID": "223",
+          "CityID": "9",
+          "Name": "福田中心"
+        },
+        {
+          "AreaID": "253",
+          "CityID": "9",
+          "Name": "人民公园"
+        },
+        {
+          "AreaID": "255",
+          "CityID": "9",
+          "Name": "皇岗新洲"
+        },
+        {
+          "AreaID": "258",
+          "CityID": "9",
+          "Name": "华强北"
+        },
+        {
+          "AreaID": "262",
+          "CityID": "9",
+          "Name": "八卦岭"
+        },
+        {
+          "AreaID": "266",
+          "CityID": "9",
+          "Name": "地推组"
+        },
+        {
+          "AreaID": "267",
+          "CityID": "9",
+          "Name": "农园"
+        },
+        {
+          "AreaID": "269",
+          "CityID": "9",
+          "Name": "竹子林"
+        },
+        {
+          "AreaID": "273",
+          "CityID": "9",
+          "Name": "梅林"
+        },
+        {
+          "AreaID": "277",
+          "CityID": "9",
+          "Name": "水贝"
+        },
+        {
+          "AreaID": "278",
+          "CityID": "9",
+          "Name": "黄贝岭"
+        },
+        {
+          "AreaID": "291",
+          "CityID": "9",
+          "Name": "华侨城"
+        },
+        {
+          "AreaID": "305",
+          "CityID": "9",
+          "Name": "红山梅龙"
+        },
+        {
+          "AreaID": "307",
+          "CityID": "9",
+          "Name": "深圳北"
+        },
+        {
+          "AreaID": "311",
+          "CityID": "9",
+          "Name": "宝体"
+        },
+        {
+          "AreaID": "315",
+          "CityID": "9",
+          "Name": "宝安中心"
+        }
+      ]
+    },
+    {
+      "CityID": "10",
+      "Name": "广州",
+      "Pinyin": "GuangZhou",
+      "AreaList": [
+        {
+          "AreaID": "209",
+          "CityID": "10",
+          "Name": "天河"
+        },
+        {
+          "AreaID": "213",
+          "CityID": "10",
+          "Name": "珠江新城"
+        },
+        {
+          "AreaID": "221",
+          "CityID": "10",
+          "Name": "赤岗"
+        },
+        {
+          "AreaID": "225",
+          "CityID": "10",
+          "Name": "区庄"
+        },
+        {
+          "AreaID": "227",
+          "CityID": "10",
+          "Name": "东山"
+        },
+        {
+          "AreaID": "230",
+          "CityID": "10",
+          "Name": "华景新城"
+        },
+        {
+          "AreaID": "263",
+          "CityID": "10",
+          "Name": "江南西"
+        },
+        {
+          "AreaID": "281",
+          "CityID": "10",
+          "Name": "北京路"
+        },
+        {
+          "AreaID": "283",
+          "CityID": "10",
+          "Name": "荔湾"
+        },
+        {
+          "AreaID": "287",
+          "CityID": "10",
+          "Name": "林和西"
+        },
+        {
+          "AreaID": "289",
+          "CityID": "10",
+          "Name": "车陂"
+        },
+        {
+          "AreaID": "293",
+          "CityID": "10",
+          "Name": "洛溪新城"
+        },
+        {
+          "AreaID": "295",
+          "CityID": "10",
+          "Name": "星河湾"
+        },
+        {
+          "AreaID": "299",
+          "CityID": "10",
+          "Name": "华南碧桂园"
+        },
+        {
+          "AreaID": "302",
+          "CityID": "10",
+          "Name": "东晓南"
+        },
+        {
+          "AreaID": "303",
+          "CityID": "10",
+          "Name": "中大"
+        }
+      ]
+    },
+    {
+      "CityID": "11",
+      "Name": "武汉",
+      "Pinyin": "WuHan"
+    }
+  ],
+  "message": "ok"
+}

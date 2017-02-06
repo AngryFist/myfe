@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<view class="container">
+  <view bindtap="toaddress">当前位置</view>
+  <!--<view class="logo">
+    <image src="https://m.daojia.com.cn/App/Public/images/QrcodeImg/water_logo.png" background-size="cover"></image>
+  </view>-->
+  <scroll-view>
+  <view class="restList" wx:for="{{list}}">
+    <image src="{{config.domain}}{{item.ShopFrontPhoto}}" class="m-img" background-size="cover"></image>
+    <view class="lay-r">
+      <text class="t-t">{{item.Name}}</text>
+      <view class="t-p">
+        <text class="v-star-a">
+          <text class="v-star-b" style="width:{{item.StarLevel}}0%;"></text>
+        </text>
+        <text>近期售: {{item.SalesVolume}}</text>
+      </view>
+      <view class="t-p">
+          <!--是否支持预定-->
+          <text wx:if="{{item.IsPre}}">
+              <text class="t-bg-c">支持跨天预定</text><text>{{item.DeliveryCopy}}</text>
+          </text>
+          <text wx:if="{{item.RestaurantStatus == 0}}">
+              <text wx:if="{{item.PerCapitaConsumption && item.PerCapitaConsumption != '-'}} ">{{item.PerCapitaConsumption}}/人</text><text>{{item.DeliveryCopy}}</text>
+          </text>
+          <text wx:if="{{item.RestaurantStatus == 1}}">
+              <text class="t-bg-c" wx:if="{{item.ReserveStatus == 3}}">午餐预定中</text>
+              <text class="t-bg-c" wx:if="{{item.ReserveStatus == 4}}">晚餐预定中</text>
+              <text>{{item.DeliveryCopy}}</text>
+          </text>
+          <text wx:if="{{item.RestaurantStatus == 2}}">
+            <text>餐厅休息中</text>
+          </text>
+      </view>
+    </view>
+  </view>
+  </scroll-view>
+</view>

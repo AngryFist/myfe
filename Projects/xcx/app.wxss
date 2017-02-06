@@ -1,0 +1,7 @@
+/**app.wxss**/
+.container {
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  font-size: 13px;
+}

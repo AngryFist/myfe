@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>财务系统-对账中心</title>
+	<link rel="stylesheet" type="text/css" href="static/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="static/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="static/css/jquery-ui.css">
+</head>
+<body>
+    <div class="header">
+        <div class="warp_doc js-render-header "></div>
+    </div>
+
+    <div class="section">
+        <div class="warp_doc">
+            <div class="asider js-rander-asider"></div>
+            <div class="container">
+               <div class="main accounts">
+                    <div class="js-tabbtn-group tab_btn_group mainnav">
+                        <a href="Accounts.html"><i class="ico collect"></i> <div class="uptag"></div>财务汇总</a>
+                        <a href="Accounts2.html"><i class="ico detail"></i> <div class="uptag"></div>财务明细</a>
+                        <a href="Accounts3.html" class="active"><i class="ico download"></i> <div class="uptag"></div>财务下载</a>
+                        <div class="uptag"></div>
+                    </div>
+                    <div class="js-tab-view tab_view_content maincontent">
+                      
+                     
+                        <div class="view js-view">
+                            <div class="sbox" id="downLoad">
+                                <div class="searchbox">
+                                    <div class="btngrunp js-tabcollect">
+                                        <div class="lbtn active js-collect"  data-type='date'>日汇总</div>
+                                        <div class="lbtn js-collect"  data-type='month'>月汇总</div>
+                                    </div>
+
+                                    <div class="btngrunp">
+                                        <i class="ico lbtn_angu active js-prev" ></i>
+                                        <i class="ico rbtn_angu js-next"></i>
+                                    </div>
+                                    <div class="datemsg mark" id="downLoadDate"></div>
+                                </div>
+                            </div>
+
+                            <div class="tbox" id="dateRender">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<script type="text/javascript">
+        var publicPath = '/static';
+        //var baseUrl = publicPath + '/modules';
+        //var baseUrl = publicPath + '/js/release/1.0.0';
+    </script>
+    <script type="text/javascript" src="static/js/vendor/jquery.js"></script>
+    <script type="text/javascript" src="static/js/require.js"  data-main="accountsMain"></script>
+
+</body>
+</html>

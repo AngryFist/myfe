@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>城市区域联动下拉框</title>
+</head>
+<body>
+
+    <select name="cityID" id="cityID"></select>
+    <select name="areaID" id="areaID"></select>
+
+    <script type="text/javascript" src="../js/jQuery-1.12.1.js"></script>
+    <script type="text/javascript" src="../common/lib/cityAreaSelect.js"></script>
+    <script type="text/javascript">
+        var options = {
+            url : '../json/cityAreaList.json',
+            cityID : 'cityID',
+            areaID : 'areaID',
+            defaulCityID : 0,
+            defaulAreaID : 0,
+            hasAll : false,
+            cityChangeCallBack : function(){
+                alert('city changed');
+            },
+            areaChangeCallBack : function(){
+                alert('area changed');
+            }
+        }
+        DJs_cityAreaSelect.Init(options);
+    </script>
+</body>
+</html>

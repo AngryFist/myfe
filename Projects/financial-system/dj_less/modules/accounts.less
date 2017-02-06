@@ -1,0 +1,266 @@
+@import "../variables";
+@import "../lib/basic";
+@import "../mixins/button";
+@import "../mixins/listview";
+
+
+
+.accounts{
+
+		.tab_btn_group{
+		padding-left: 40px;
+		._clearfix();
+
+		a{
+			line-height: 70px;
+			display: block;
+			float: left;
+			margin-right: 40px;
+			color: @baseTextColor;
+			font-size: @titleFontSize;
+			position: relative;
+			.uptag{
+				position: absolute;
+				height: 2px;
+				background: @markColor;
+				border-radius: 3px;
+				bottom: 0px;
+				width: 100%;
+				left: 0px;
+				display: none;
+			}
+			&.btn{
+				margin-right: 0px;
+			}
+			.ico{
+				display: inline-block;
+				float: left;
+				width: 32px;
+				height: 32px;
+				margin-right: 13px;
+				margin-top: 20px;
+				background: url('@{dico}') no-repeat 0px 0px;
+				&.collect{
+					background-position: -21px -747px;
+				}
+				&.detail{
+					background-position: -21px -818px;
+				}
+				&.download{
+					background-position: -20px -887px;
+				}
+			}
+			&.active{
+				color: @markColor;
+				.uptag{
+					display: block;
+				}
+				.ico{
+
+					&.collect{
+						background-position: -90px -747px;
+					}
+					&.detail{
+						background-position: -92px -818px;
+					}
+					&.download{
+						background-position: -90px -886px;
+					}
+
+				}
+			}
+
+		}
+		
+	}
+
+	.tab_view_content{
+		.view{
+			// display: none;
+			background: #ffffff;
+			min-height: 664px;
+		}
+	}
+
+	.sbox{
+		padding: 20px;
+		.searchbox{
+			// padding: 0px 0px 0px 40px;
+			._clearfix();
+		}
+
+	}
+	.linebox{
+		._clearfix();
+		margin-bottom: 16px;
+		.fleft{
+			line-height: 34px;
+			._clearfix();
+			float: left;
+			width: 60%;
+		}
+		.fright{
+			line-height: 34px;
+			._clearfix();
+			float: right;
+
+		}
+	}
+	.btngrunp{
+		float: left;
+		margin-right: 10px;
+		._clearfix();
+
+		.lbtn{
+			float: left;
+			// margin-left: -1px;
+			border:1px solid @assistColor;
+
+
+			
+			padding: 0px 20px;
+			height: 34px;
+			line-height: 34px;
+			cursor: pointer;
+			&:last-child{
+				border-left: none;
+			}
+			&.active{
+				background: @markColor;
+				border-color: @markColor;
+				color: #ffffff;
+			}
+		}
+		.ico{
+			cursor: pointer;
+			float: left;
+			width: 36px;
+			height: 36px;
+			display: block;
+			overflow:hidden;
+			margin-right: 10px;
+			background: url('@{dico}') no-repeat -87px -434px @assistColor;
+			&.lbtn_angu{
+				background-position: -90px -486px;
+			}
+			&.rbtn_angu{
+				background-position: -87px -434px;
+			}
+			&.active{
+				background-color: @markColor;
+			}
+		}
+	}
+	.datemsg{
+		line-height: 34px;
+	}
+	.tbox{
+		padding:0px 20px; 
+	}
+
+	.dheader{
+		width: 80%;
+		line-height: 30px;
+		text-align: right;
+		padding: 10px 0px;
+		text-align: right;
+		letter-spacing: 0px;
+
+	}
+	.dnumber{
+		display: inline-block;
+		margin: 30px 0px;
+	}
+	.dcontent{
+		padding: 0px 10px;
+		width: 70%;
+		border:1px solid @assistColor;
+		margin: 0px auto 15px auto;
+		// display: none;
+	}
+	a.download{
+		padding: 30px 0px;
+		display: inline-block;
+	}
+
+	.searchbar{
+
+		background: #ffffff;
+		padding: 22px 0px;
+		margin-bottom: 10px;
+		min-height: 320px;
+		._clearfix();
+		h2{
+			font-weight: bold;
+			padding-top: 25px;
+		}
+		.group_search{
+			float: left;
+			min-height: 320px;
+			text-align: center;
+			width: 65%;
+			border-right: 1px solid @assistColor;
+		}
+		.btn_group{
+			margin-top: 25px;
+			position: relative;
+
+			._clearfix();
+
+		}
+		.exact_search{
+			float: left;
+			min-height: 320px;
+			text-align: center;
+			width: 34%;
+			.line_inputbox_inline{
+				input{
+					text-align: center;
+				}
+				
+				width: 80%;
+			}
+		}
+	}
+
+	.detailbox{
+		background: #ffffff;
+		// padding: 10px 30px 40px 30px;
+		// margin-top: 10px;
+		
+			.btngrunp{
+				float: none;
+				display: inline-block;
+				._clearfix();
+				border: 1px solid @assistColor;
+				.lbtn{
+					border:none;
+				}
+				margin-bottom: 10px;
+			}
+			.tatailheader{
+				margin-bottom: 10px;
+				clear: both;
+				height: 70px;
+				background: @querBgColor;
+				line-height: 70px;
+				padding: 0px 70px;
+				._clearfix();
+				.left{
+					float: left;
+				}
+				.right{
+					float: right;
+				}
+				.bi{
+					padding-left: 20px;
+				}
+				.title{
+					font-size: @baseFontSize + 2;
+					padding-right: 60px;
+				}
+
+			}
+		
+	}
+}

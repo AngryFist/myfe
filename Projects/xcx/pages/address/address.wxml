@@ -1,0 +1,2 @@
+<view>{{latitude}}</view>
+<view>{{text}}</view>

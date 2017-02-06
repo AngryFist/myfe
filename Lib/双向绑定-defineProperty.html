@@ -1,0 +1,25 @@
+<script src="http://static.daojia.com.cn/jquery/1.12.3/jquery.min.js"></script>
+<input type="text" id="input">
+<p class="p" ng-bind="input"></p>
+<script>
+
+    var a = {}
+    Object.defineProperty(a,"b",{
+        set:function(newValue){
+            // document.getElementById('input').value = newValue;
+            // $('.p').text(newValue);
+            this.c = newValue;
+        },
+        get:function(){
+            $('.p').text(this.c);
+        }
+    })
+    a.b = 'ccc';
+    a.b;
+
+    $(document).keyup(function(e){
+        var id = e.target.id;
+        $('*[ng-bind=' + id + ']').text(e.target.value);
+    })
+
+</script>

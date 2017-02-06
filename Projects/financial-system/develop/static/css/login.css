@@ -1,0 +1,113 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  position: relative;
+  overflow: hidden;
+  background: url('../images/bg/loginbg.png') no-repeat center center;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.loginbox {
+  position: absolute;
+  width: 564px;
+  height: 504px;
+  top: 50%;
+  left: 50%;
+  margin-top: -252px;
+  margin-left: -282px;
+  background: url('../images/bg/login.png') no-repeat center center;
+}
+.loginbox .loginwarp {
+  width: 386px;
+  margin: 85px auto;
+  font-size: 18px;
+}
+.loginbox .loginwarp ul li {
+  width: 386px;
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 18px;
+  *zoom: 1;
+}
+.loginbox .loginwarp ul li:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.loginbox .loginwarp ul li.last {
+  padding-top: 45px;
+}
+.loginbox .loginwarp ul li.frist {
+  padding-bottom: 35px;
+}
+.loginbox .loginwarp span.title {
+  float: left;
+  width: 84px;
+  display: block;
+}
+.loginbox .loginwarp input[type='text'],
+.loginbox .loginwarp input[type='password'] {
+  background: #ffffff;
+  height: 38px;
+  line-height: 22px;
+  font-size: 14px;
+  float: left;
+  width: 269px;
+  border: 1px solid #d7dbde;
+  border-radius: 3px;
+  padding: 0px 10px;
+}
+.loginbox .loginwarp input[type='text'].verifycode,
+.loginbox .loginwarp input[type='password'].verifycode {
+  width: 148px;
+  margin-right: 7px;
+}
+.loginbox .loginwarp input[type='submit'],
+.loginbox .loginwarp input[type='button'],
+.loginbox .loginwarp a.btn {
+  height: 40px;
+  text-align: center;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 14px;
+  border: none;
+}
+.loginbox .loginwarp input[type='submit'].verifycode_btn,
+.loginbox .loginwarp input[type='button'].verifycode_btn,
+.loginbox .loginwarp a.btn.verifycode_btn {
+  background: #ffcc33;
+  width: 113px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.loginbox .loginwarp input[type='submit'].verifycode_btn:hover,
+.loginbox .loginwarp input[type='button'].verifycode_btn:hover,
+.loginbox .loginwarp a.btn.verifycode_btn:hover {
+  background: #ffbf00;
+}
+.loginbox .loginwarp input[type='submit'].login_btn,
+.loginbox .loginwarp input[type='button'].login_btn,
+.loginbox .loginwarp a.btn.login_btn {
+  background: #2dc2ea;
+  width: 375px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.loginbox .loginwarp input[type='submit'].login_btn:hover,
+.loginbox .loginwarp input[type='button'].login_btn:hover,
+.loginbox .loginwarp a.btn.login_btn:hover {
+  background: #15a8cf;
+}
+.loginbox .loginwarp .logo {
+  display: block;
+  float: left;
+  margin-right: 14px;
+}
+.loginbox .loginwarp h1 {
+  font-size: 26px;
+  color: #2dc2ea;
+}

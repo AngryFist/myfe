@@ -1,0 +1,56 @@
+.widget {
+    border:4px solid #ddd;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    width: 100%;
+    background: #fff;
+}
+.inner-content {
+    width: 750px;
+    float: left;
+    border: 4px solid #eee;
+    margin: 60px 40px;
+    padding:20px;
+    position: relative;
+}
+
+.right-context-menu {
+    position: absolute;
+    width: 300px;
+    box-shadow: 1px 2px 4px #ddd;
+    background: #fff;
+    display: none;
+    border: 1px solid #ddd;
+}
+.right-context-menu li {
+    font-size: 14px;
+    border-bottom: 1px solid #eee;
+    padding:5px 30px;
+    line-height: 24px;
+}
+.right-context-menu li:hover {
+    background-color: #08c;
+    color: #fff;
+}
+
+
+.modules-content {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+}
+.modules-content li {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #08c;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    float: left;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+.modules-content li:hover {
+    opacity: .8;
+}

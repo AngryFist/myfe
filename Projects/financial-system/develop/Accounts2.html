@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>财务系统-对账中心</title>
+	<link rel="stylesheet" type="text/css" href="static/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="static/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="static/css/jquery.datetimepicker.css">
+</head>
+<body>
+    <div class="header">
+        <div class="warp_doc js-render-header "></div>
+    </div>
+
+    <div class="section">
+        <div class="warp_doc">
+            <div class="asider js-rander-asider"></div>
+            <div class="container">
+               <div class="main accounts">
+                    <div class="js-tabbtn-group tab_btn_group mainnav">
+                        <a href="Accounts.html"><i class="ico collect"></i> <div class="uptag"></div>财务汇总</a>
+                        <a href="Accounts2.html" class="active"><i class="ico detail"></i> <div class="uptag"></div>财务明细</a>
+                        <a href="Accounts3.html" ><i class="ico download"></i> <div class="uptag"></div>财务下载</a>
+                   
+                    </div>
+                    <div class="js-tab-view tab_view_content maincontent">
+                    
+                        <div class="view js-view">
+                         <!--    <div class="searchbar">
+                                <div class="group_search">
+                                    <h2>组合搜索</h2>
+
+                                    <div class="btn_group">
+                                        <input type="button" value="今日" class="btn btn-border active">
+                                        <input type="button" value="昨日" class="btn btn-border">
+                                        <input type="button" value="最近7天" class="btn btn-border">
+                                        <input type="button" value="最近30天" class="btn btn-border">
+                                    </div>
+
+
+                                    <div class="btn_group">
+                                      
+                                        <div class="line_inputbox_inline wlv1">
+                                            <input type="text"  class="dateinput" id="start_date" name="start_date">
+                                        </div>
+
+                                       
+                                        <span>到</span>
+
+                                        <div class="line_inputbox_inline wlv1">
+                                            <input type="text" class="dateinput" id="end_date" name="end_date">
+                                        </div>
+
+                                     
+                                        
+                                    </div>
+
+                                    <div class="btn_group">
+                                       <div class="line_inputbox_inline wlv1">
+                                            <select name="" id="">
+                                                <option value="1">--订单类型--</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="line_inputbox_inline wlv1">
+                                            <select name="" id="">
+                                                <option value="1">--支付方式--</option>
+                                            </select>
+                                        </div>
+
+
+                                        <div class="line_inputbox_inline wlv1">
+                                            <select name="" id="">
+                                                <option value="1">--业务类型--</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="btn_group pdt10">
+                                        <input type="button" value="搜索" class="btn btn-primary">
+                                        
+                                    </div>
+
+
+                                </div>
+                                <div class="exact_search">
+                                    <h2>精确搜索</h2>
+
+                                    <div class="btn_group">
+                                        <div class="line_inputbox_inline">
+                                           <input type="text" placeholder="请输入订单号/手机号码...">
+                                        </div>
+                                    </div>
+
+                                    
+                                    <div class="btn_group pdt10">
+                                        <input type="button" value="搜索" class="btn btn-primary">
+                                    </div>
+                                </div>
+                                
+                            </div> -->
+                            <div class="sbox">
+
+                                <div class="searchbox">
+                                    <div class="linebox mb0">
+
+                                        <div class="line_inputbox wlv2">
+                                              <input type="text"  class="dateinput" id="start_date" name="start_date">
+                                        </div>
+
+                                        <span class="dao">到</span>
+
+
+                                        <div class="line_inputbox wlv2">
+                                             <input type="text" class="dateinput" id="end_date" name="end_date">
+                                        </div>
+
+
+                                        <div class="line_inputbox wlv1">
+                                            <select name="" id="">
+                                                <option value="1">--订单类型--</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="line_inputbox wlv1">
+                                            <select name="" id="">
+                                                <option value="1">--支付方式--</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="line_inputbox wlv1">
+                                            <select name="" id="">
+                                                <option value="1">--业务类型--</option>
+                                            </select>
+                                        </div>
+
+
+                                        <div class="line_inputbox wlv2">
+                                              <input type="text" placeholder="精确搜索关键字"  id="start_date" name="start_date">
+                                        </div>
+
+                                        <input type="button" value="搜索" class="btn btn-primary float_l">
+
+                                       
+
+                                      
+                                        
+                                    </div>
+
+
+                            </div>
+                                
+                            </div>
+
+                            <div class="tbox">
+                                 <div class="detailbox">
+                                <div class="btngrunp js-tabcollect">
+                                    <div class="lbtn active">全部</div>
+                                    <div class="lbtn">流入</div>
+                                    <div class="lbtn">流出</div>
+                                </div>
+
+                                <div class="tatailheader">
+                                    <div class="left">
+                                        <span class="title">流入</span>
+                                        <span class="streamin">+444，444.00</span>
+                                        <span class="bi">160,490 笔</span>
+                                        
+                                    </div>
+
+                                    <div class="right">
+                                        <span class="title">流出</span>
+                                        <span class="streamout">+444，444.00</span>
+                                        <span class="bi">160,490 笔</span>
+                                        
+                                    </div>
+                                </div>
+
+
+                                <table border="0" cellspacing="0" cellpadding="0" class="linborder">
+                                    <thead>
+                                        <tr>
+                                            <td width="120">下单时间</td>
+                                            <td>下单编号</td>
+                                            <td>订单金额（元）</td>
+                                            <td>订单状态</td>
+                                            <td>支付金额</td>
+                                            <td>支付流水号</td>
+                                            <td>餐厅名称</td>
+                                      
+                                            <td>操作</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        <tr>
+                                            <td class="tl">
+                                                2016/05/09 22:00:00
+                                            </td>
+                                            <td>R111111111</td>
+                                            <td>98.00</td>
+                                            <td>已结算</td>
+                                            <td>98.00</td>
+                                            <td>2016051021001004790243126263</td>
+                                            <td>凉皮先生</td>
+                                            <td><a href="">详情</a></td>
+                                        
+                                        </tr>
+
+                                        <tr>
+                                            <td class="tl">
+                                                2016/05/09 22:00:00
+                                            </td>
+                                            <td>R111111111</td>
+                                            <td>98.00</td>
+                                            <td>已结算</td>
+                                            <td>98.00</td>
+                                            <td>2016051021001004790243126263</td>
+                                            <td>凉皮先生</td>
+                                            <td><a href="">详情</a></td>
+                                        
+                                        </tr>
+
+
+                                        
+
+
+                                      
+                                        
+                                    </tbody>
+                                </table>
+
+
+                            </div>
+                                
+                            </div>
+
+                            
+
+                           
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<script type="text/javascript">
+        var publicPath = '/static';
+        //var baseUrl = publicPath + '/modules';
+        //var baseUrl = publicPath + '/js/release/1.0.0';
+    </script>
+    <script type="text/javascript" src="static/js/vendor/jquery.js"></script>
+    <script type="text/javascript" src="static/js/require.js"  data-main="accountsMain"></script>
+
+</body>
+</html>

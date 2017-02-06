@@ -1,0 +1,287 @@
+@import "../variables";
+@import "../lib/basic";
+.-invite_frame{
+	._init(@className){
+		.copy{
+			text-align: center;
+			margin-top: -.5rem;
+			input{
+				text-align: center;
+				background: #bbbbbb;
+				border-radius: @inputRadius;
+				width: 100%;
+				height: 3rem;
+				margin-top: .5rem;
+			}
+		}
+		.inputbox{
+			.-display ._box();
+			height: 3.5rem;
+			margin-bottom: 1rem;
+			position: relative;
+			select{
+				height: 3.5rem;
+				-webkit-border-radius: @inputRadius;
+				-moz-border-radius: @inputRadius;
+				-ms-border-radius: @inputRadius;
+				-o-border-radius: @inputRadius;
+				border-radius: @inputRadius;
+				border:none;
+				background: url('@{bgUrl}selectbg.png') no-repeat;
+				.-bg ._size(100% 100%);
+				text-align: center;
+				font-size: @bigFontSize;
+				color: #555;
+				padding-left: .8rem;
+				padding-right: 1.5rem;
+				margin-right: 0.8rem;
+			}
+
+			.tip{
+				text-align: center;
+				opacity: 0.0;
+				transition:all 200ms;
+				color: @markColor;
+				text-align: center;
+				line-height: 2rem;
+				position:absolute;
+				top: -3rem;
+				left: 0;
+				width: 100%;
+				.-display ._box();
+						
+				.-display ._box-align(center,center);
+				.djico{
+					color: @markColor;
+					font-size: 1.8rem;
+					display: block;
+					margin-right: 0.5rem;
+				}
+				span{
+					font-size: @titleFontSize;
+					display: block;
+					line-height: 1rem;
+				}
+
+			}
+			input{
+				&[type="text"],&[type="tel"]{
+					height:3.5rem;
+					text-align: center;
+					background: #fff;
+					display: block;
+					.-display ._flex(1);
+					line-height: 3.3rem;
+					font-size: @bigFontSize;
+					border-radius:  @inputRadius;
+					border:1px solid @inputBorderColor;
+				}
+				&[type="button"]{
+					height: 3.5rem;
+					width: 100%;
+					display: block;
+					border-radius:  @inputRadius;
+					color: #ffffff;
+					background: @markColor;
+					font-size: @bigFontSize;
+
+					&:active{
+						background:darken(@markColor, 10%)
+					}
+					&:visited{
+						background: @markColor;
+					}
+
+				}
+			}
+			@media screen and(max-width: 320px) {
+
+			 	input{
+					&[type="text"],&[type="tel"]{
+					
+						font-size: @bigFontSize - 0.3;
+						
+					}
+
+					select{
+					
+						font-size: @bigFontSize - 0.3;
+						
+					}
+				
+				}
+
+			}
+			a{
+				&.btn{
+
+					height: 3.5rem;
+					width: 100%;
+					display: block;
+					border-radius:  @inputRadius;
+					color: #ffffff;
+					background: @markColor;
+					font-size: @bigFontSize;
+					text-align: center;
+					line-height: 3.5rem;
+
+					&:active{
+						background:darken(@markColor, 10%)
+					}
+					&:visited{
+						background: @markColor;
+					}
+
+					&.aux{
+						background: @auxColor;
+						&:active{
+							background:darken(@auxColor, 10%)
+						}
+						&:visited{
+							background: @auxColor;
+						}
+					}
+
+				}
+			}
+		}
+		.discrie{
+			text-align: center;
+			color: @linkColor;
+			text-align: center;
+			line-height: 2rem;
+			.-display ._box();
+					
+			.-display ._box-align(center,center);
+			.djico{
+				color: @markColor;
+				font-size: 1.6rem;
+				display: block;
+				margin-right: 0.5rem;
+			}
+			span{
+				display: block;
+				line-height: 1rem;
+			}
+
+		}
+
+		.@{className}{
+			width: 100%;
+			height: 100%;
+			
+
+			.invite_warp{
+				padding: 1.5rem 1.9rem;
+			}
+
+			.topside{
+				width: 100%;
+				display: block;
+			}
+
+
+
+			.invite_content{
+				padding: 3rem 5rem;
+				background-color: rgba(255,255,255,0.85);
+			}
+
+			
+			 @media screen and(max-width: 320px) {
+
+			 	.invite_content{
+					padding: 3rem 3.2rem;
+					background-color: rgba(255,255,255,0.85);
+				}
+			  
+			}
+
+
+			.invite_content_warp{
+					.-display ._box();
+					.-display ._orient(vertical);
+					.-display ._box-align(center,center);
+					img{
+						&.logo{
+							display: block;
+							margin-bottom: 1.5rem;
+							width: 100%;
+						}
+						&.photo{
+							display: block;
+							overflow: hidden;
+							border: 0.3rem;
+							width: 4.8rem;
+							height: 4.8rem;
+							margin-bottom: 1.5rem;
+							-webkit-border-radius: 50%;
+							-moz-border-radius: 50%;
+							-ms-border-radius: 50%;
+							-o-border-radius: 50%;
+							border-radius: 50%;
+						}
+					}
+					.conpon{
+						font-size: 2rem;
+						font-weight: bold;
+						color: @markColor;
+						margin-bottom: 1.5rem;
+					}
+
+					.resultlog{
+						margin-bottom: 1.5rem;
+						.-display ._box();
+						.-display ._box-align(center,center);
+						font-size: 1.7rem;
+						i{
+							color: @markColor;
+							
+							font-size: 2rem;
+							&.success{
+								color: #4bcd36;
+							}
+						}
+
+					}
+					.info{
+
+					}
+
+			}
+			.midside{
+				width: 100%;
+				display: block;
+			}
+			.invite_foot{
+				padding: 5rem 1.6rem;
+				min-height: 15rem;
+				background-color: rgba(255,255,255,0.85);
+				.toolarea{
+					margin-bottom: 3rem;
+				}
+			}
+		}
+
+	}
+}
+//用法
+// .-pageinit ._page(invite_container);
+// html结构
+// <div class="invite_container">
+//     <div class="invite_warp">
+//         <img src="static/images/bg/sidetop.png" class="topside" alt="" />
+
+//         <div class="invite_content">
+// 			...
+//         </div>
+
+//         <img src="static/images/bg/sidecenter.png" class="midside" alt="" />
+
+//         <div class="invite_foot">
+//             ...
+//         </div>
+//     </div>
+// </div>
+
+
