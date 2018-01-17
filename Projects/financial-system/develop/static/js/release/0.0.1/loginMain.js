@@ -1,1 +1,0 @@
-define("common/login",[],function(){var n=function(n){console.log(n)};return{Init:n}}),require(["common/login"],function(n){n.Init("login ss")}),define("loginMain",function(){});
